@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #66bfbf;
+}
+
+.animation {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #eaf6f6;
+  animation: squeez 5s ease-in infinite;
+}
+
+.bar {
+  width: 8px;
+  height: 100px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.heart {
+  color: #ff0063;
+}
+
+.love,
+.you,
+.i {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txtL,
+.heart,
+.txtU,
+.U,
+.i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txtL {
+  animation: lovetxt 5s ease-in infinite;
+}
+
+.heart {
+  font-size: 60px;
+  animation: loveHeart 5s ease-in infinite;
+}
+
+.txtU {
+  animation: youtxt 5s ease-in infinite;
+}
+
+.U {
+  animation: Utxt 5s ease-in infinite;
+}
+
+.i {
+  animation: itxt 5s ease-in infinite;
+}
+
+@keyframes squeez {
+  0% {
+    width: 350px;
+    letter-spacing: 5px;
+  }
+  25% {
+    width: 230px;
+    letter-spacing: -5px;
+  }
+  26% {
+    letter-spacing: 5px;
+  }
+  50% {
+    width: 200px;
+  }
+  75% {
+    width: 170px;
+    letter-spacing: -5px;
+  }
+  100% {
+    width: 100px;
+    letter-spacing: 5px;
+  }
+}
+
+@keyframes lovetxt {
+  0% {
+    width: 140px;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  25% {
+    width: 100px;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  27%,
+  100% {
+    width: 0;
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+}
+
+@keyframes loveHeart {
+  0%,
+  25% {
+    width: 0;
+    opacity: 0;
+    transform: scale(0, 0);
+    font-size: 60px;
+  }
+  27% {
+    transform: scale(1.5, 1.5);
+  }
+  30% {
+    width: 70px;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 1);
+    font-size: 60px;
+  }
+  53% {
+    transform: scale(1.5, 1.5);
+    font-size: 80px;
+  }
+  55% {
+    width: 70px;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  75% {
+    width: 50px;
+    transform: scale(1, 1);
+  }
+  77% {
+    transform: scale(1.5, 1.5);
+  }
+  80% {
+    transform: scale(1, 1);
+    font-size: 70px;
+  }
+  100% {
+    width: 100px;
+    opacity: 1;
+    transform: scale(1, 1);
+    font-size: 80px;
+  }
+}
+
+@keyframes youtxt {
+  0% {
+    width: 90px;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  25% {
+    width: 80px;
+    opacity: 1;
+  }
+  26% {
+    width: 90px;
+    opacity: 1;
+  }
+  50% {
+    width: 80px;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  53%,
+  100% {
+    width: 0;
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+}
+
+@keyframes Utxt {
+  0%,
+  50% {
+    width: 0;
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  53% {
+    width: 80px;
+    opacity: 1;
+  }
+  55% {
+    transform: scale(1, 1);
+  }
+  75% {
+    width: 50px;
+    opacity: 1;
+  }
+  76%,
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+@keyframes itxt {
+  0%,
+  75% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  77%,
+  100% {
+    width: 0;
+    opacity: 0;
+    transform: scale(1, 1);
+  }
+}
